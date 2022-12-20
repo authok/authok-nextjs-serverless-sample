@@ -5,7 +5,7 @@ inputs:
     dist: ./
     hook: npm run build
     exclude:
-      - .env
+      - .env.local
   faas:
     runtime: Nodejs12.16
     framework: nextjs
