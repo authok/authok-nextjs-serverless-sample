@@ -4,13 +4,16 @@
   "description": "Example of how to sign in to your Next.js application using Authok",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "build:sls": "rimraf .next && cross-env NODE_ENV=production SERVERLESS=true next build",
+    "start": "next start",
+    "deploy": "slt deploy",
+    "deploy:layer": "slt deploy --target=./layer"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "@authok/nextjs-authok": "^2.0.2",
+    "cross-env": "^7.0.3",
     "next": "^13.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -19,6 +22,7 @@
     "@types/node": "^18.11.17",
     "@types/react": "^18.0.1",
     "@types/react-dom": "^18.0.9",
+    "cross-env": "^7.0.3",
     "next": "^13.0.7",
     "typescript": "^4.9.4"
   }

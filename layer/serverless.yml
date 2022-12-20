@@ -1,0 +1,15 @@
+org: '1252461817'
+app: authok-nextjs-serverless-sample
+stage: prod
+component: layer
+name: authok-nextjs-serverless-sample-layer
+inputs:
+  name: authok-nextjs-serverless-sample-layer
+  region: ap-guangzhou
+  src:
+    src: ../node_modules
+    targetDir: /node_modules
+  runtimes:
+    - Nodejs12.16
+
+

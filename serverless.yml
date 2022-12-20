@@ -3,7 +3,7 @@ name: http-nextjs-HMJwztkA1x
 inputs:
   src:
     dist: ./
-    hook: npm run build
+    hook: npm run build:sls
     exclude:
       - "node_modules/**"
   faas:
