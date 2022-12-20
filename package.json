@@ -1,0 +1,23 @@
+{
+  "name": "nextjs-authok-example",
+  "version": "1.0.0",
+  "description": "Example of how to sign in to your Next.js application using Authok",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@authok/nextjs-authok": "^2.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@types/react": "^18.0.1",
+    "@types/react-dom": "^18.0.9",
+    "typescript": "^4.9.4"
+  }
+}
