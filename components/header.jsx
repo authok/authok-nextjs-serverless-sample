@@ -11,16 +11,41 @@ const Header = () => {
         <ul>
           <li>
             <Link href="/" legacyBehavior>
-              <a>主页</a>
+              <a>首页</a>
             </Link>
           </li>
           <li>
-            <Link href="/protected-page" legacyBehavior>
-              <a>被保护页面</a>
+            <Link href="/about" legacyBehavior>
+              <a>关于我们</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/products" legacyBehavior>
+              <a>商品列表</a>
             </Link>
           </li>
           {user ? (
             <>
+              <li>
+                <Link href="/orders" legacyBehavior>
+                  <a>订单列表</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/profile-csr" legacyBehavior>
+                  <a>个人信息(CSR)</a>
+                </Link>
+              </li>{' '}
+              <li>
+                <Link href="/profile-ssr" legacyBehavior>
+                  <a>个人信息 (SSR)</a>
+                </Link>
+              </li>{' '}
+              <li>
+                <Link href="/profile-mw" legacyBehavior>
+                  <a>Profile (MW)</a>
+                </Link>
+              </li>{' '}
               <li>
                 <a href="/api/auth/logout" data-testid="logout">
                   注销
@@ -46,7 +71,7 @@ const Header = () => {
           background-color: #333;
         }
         nav {
-          max-width: 42rem;
+          max-width: 82rem;
           margin: 1.5rem auto;
         }
         ul {
@@ -58,7 +83,7 @@ const Header = () => {
         li {
           margin-right: 1rem;
         }
-        li:nth-child(2) {
+        li:nth-child(3) {
           margin-right: auto;
         }
         a {

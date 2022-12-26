@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@authok/nextjs-authok": "^2.0.2",
+    "@serverless-jwt/next": "^0.2.1",
     "cross-env": "^7.0.3",
     "next": "^13.0.7",
     "react": "^18.2.0",
